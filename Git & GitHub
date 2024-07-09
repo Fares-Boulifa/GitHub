@@ -1,0 +1,75 @@
+tunbs609@N-5CD6458VP9 MINGW64 ~
+$ cd desktop
+
+tunbs609@N-5CD6458VP9 MINGW64 ~/desktop
+$ mkdir workshop_git
+
+tunbs609@N-5CD6458VP9 MINGW64 ~/desktop
+$ cd workshop_git
+
+tunbs609@N-5CD6458VP9 MINGW64 ~/desktop/workshop_git
+$ touch index.txt
+
+tunbs609@N-5CD6458VP9 MINGW64 ~/desktop/workshop_git
+$ git init
+Initialized empty Git repository in C:/Users/tunbs609/Desktop/workshop_gi
+
+tunbs609@N-5CD6458VP9 MINGW64 ~/desktop/workshop_git (master)
+$ git add index.txt
+
+tunbs609@N-5CD6458VP9 MINGW64 ~/desktop/workshop_git (master)
+$ git commit -m "adding index.txt"
+[master (root-commit) 5ce91a7] adding index.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.txt
+
+tunbs609@N-5CD6458VP9 MINGW64 ~/desktop/workshop_git (master)
+$ git add git.txt
+fatal: pathspec 'git.txt' did not match any files
+
+tunbs609@N-5CD6458VP9 MINGW64 ~/desktop/workshop_git (master)
+$ git log
+commit 5ce91a7cb1e448d2bade2a0afc1b15c3444c7705 (HEAD -> master)
+Author: Fares-Boulifa <fares.boulifa@hotmail.com>
+Date:   Tue Jul 9 12:18:37 2024 +0100
+
+    adding index.txt
+
+tunbs609@N-5CD6458VP9 MINGW64 ~/desktop/workshop_git (master)
+$ touch git.txt
+
+tunbs609@N-5CD6458VP9 MINGW64 ~/desktop/workshop_git (master)
+$ git add gid.txt
+fatal: pathspec 'gid.txt' did not match any files
+
+tunbs609@N-5CD6458VP9 MINGW64 ~/desktop/workshop_git (master)
+$ git add git.txt
+
+tunbs609@N-5CD6458VP9 MINGW64 ~/desktop/workshop_git (master)
+$ git commit -m "adding git.txt"
+[master 905cba6] adding git.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 git.txt
+
+tunbs609@N-5CD6458VP9 MINGW64 ~/desktop/workshop_git (master)
+$ git rm index.txt
+rrm 'index.txt'
+m
+tunbs609@N-5CD6458VP9 MINGW64 ~/desktop/workshop_git (master)
+$ rm 'index.txt'
+rm: cannot remove 'index.txt': No such file or directory
+
+tunbs609@N-5CD6458VP9 MINGW64 ~/desktop/workshop_git (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    index.txt
+
+
+tunbs609@N-5CD6458VP9 MINGW64 ~/desktop/workshop_git (master)
+$ cd desktop
+bash: cd: desktop: No such file or directory
+
+tunbs609@N-5CD6458VP9 MINGW64 ~/desktop/workshop_git (master)
+$
